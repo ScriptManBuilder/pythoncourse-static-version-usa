@@ -70,7 +70,7 @@ function AppContent() {
             margin: '0 auto 20px'
           }} />
           <h2 style={{ fontFamily: 'Inter, sans-serif', fontWeight: 700, margin: 0 }}>
-            WILLIAMS
+            Loading
           </h2>
           <p style={{ margin: '10px 0 0', opacity: 0.8 }}>Loading...</p>
         </div>
