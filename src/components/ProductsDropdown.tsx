@@ -42,7 +42,7 @@ const ProductsDropdown: React.FC<ProductsDropdownProps> = ({
     { id: 'Python Basics', name: 'Python Basics', icon: '🐍', description: 'Start your Python journey' },
     { id: 'Python Data', name: 'Data Types', icon: '📋', description: 'Variables & structures' },
     { id: 'Python Functions', name: 'Functions', icon: '⚙️', description: 'Code organization' },
-    { id: 'Python I/O', name: 'File Handling', icon: '�', description: 'Input/Output operations' },
+    // { id: 'Python I/O', name: 'File Handling', icon: '�', description: 'Input/Output operations' },
     { id: 'Python OOP', name: 'OOP', icon: '🏢', description: 'Object-oriented programming' },
     { id: 'Python Libraries', name: 'Libraries', icon: '�', description: 'Package management' },
     { id: 'Python Web', name: 'Web Development', icon: '🌐', description: 'Flask web apps' },

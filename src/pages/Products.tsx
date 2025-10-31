@@ -46,7 +46,7 @@ const Products: React.FC = () => {
     { id: 'Python Basics', name: 'Python Basics' },
     { id: 'Python Data', name: 'Data Types' },
     { id: 'Python Functions', name: 'Functions' },
-    { id: 'Python I/O', name: 'File Handling' },
+    // { id: 'Python I/O', name: 'File Handling' },
     { id: 'Python OOP', name: 'OOP' },
     { id: 'Python Libraries', name: 'Libraries' },
     { id: 'Python Web', name: 'Web Development' },

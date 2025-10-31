@@ -6,10 +6,12 @@ import { defaultTheme } from './styles/theme';
 import { CartProvider } from './contexts/CartContext';
 import { AuthProvider } from './contexts/AuthContext';
 import { useServiceWorker } from './hooks/useServiceWorker';
+import { useInitialLoader } from './hooks/useInitialLoader';
 import { useAuth } from './contexts/AuthContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import LoadingFallback from './components/LazyLoading';
+import InitialLoader from './components/InitialLoader';
 
 // Основные компоненты с ленивой загрузкой
 const LazyHome = React.lazy(() => import('./pages/Home'));
@@ -34,6 +36,19 @@ const LazyBlog = React.lazy(() => import('./pages/Blog'));
 function App() {
   // Регистрируем Service Worker для кэширования
   useServiceWorker();
+  
+  // Hook for initial loading
+  const { isInitialLoading, loadingProgress } = useInitialLoader();
+
+  // Show initial loader on first site visit
+  if (isInitialLoading) {
+    return (
+      <ThemeProvider theme={defaultTheme}>
+        <GlobalStyles />
+        <InitialLoader progress={loadingProgress} />
+      </ThemeProvider>
+    );
+  }
 
   return (
     <ThemeProvider theme={defaultTheme}>
