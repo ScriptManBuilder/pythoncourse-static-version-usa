@@ -66,6 +66,24 @@ export const getProductVideo = (productId: number): string | undefined => {
   if (productId === 11) {
     return "/videos/Python 3 Programming Your Guide to Basic Python Programming for (11).mp4";
   }
+  if (productId === 12) {
+    return "/videos/Python 3 Programming Your Guide to Basic Python Programming for (32).mp4";
+  }
+  if (productId === 13) {
+    return "/videos/Python 3 Programming Your Guide to Basic Python Programming for (36).mp4";
+  }
+  if (productId === 14) {
+    return "/videos/Python 3 Programming Your Guide to Basic Python Programming for (40).mp4";
+  }
+  if (productId === 15) {
+    return "/videos/Python 3 Programming Your Guide to Basic Python Programming for (44).mp4";
+  }
+  if (productId === 16) {
+    return "/videos/Python 3 Programming Your Guide to Basic Python Programming for (3).mp4";
+  }
+  if (productId === 17) {
+    return "/videos/Python 3 Programming Your Guide to Basic Python Programming for (8).mp4";
+  }
   return undefined;
 };
 
@@ -124,6 +142,60 @@ export const getProductVideos = (productId: number): string[] | undefined => {
     ];
   }
   
+  // Courses 12-15: 4 videos each ($109-$139)
+  if (productId === 12) {
+    return [
+      "/videos/Python 3 Programming Your Guide to Basic Python Programming for (32).mp4",
+      "/videos/Python 3 Programming Your Guide to Basic Python Programming for (33).mp4",
+      "/videos/Python 3 Programming Your Guide to Basic Python Programming for (34).mp4",
+      "/videos/Python 3 Programming Your Guide to Basic Python Programming for (35).mp4"
+    ];
+  }
+  if (productId === 13) {
+    return [
+      "/videos/Python 3 Programming Your Guide to Basic Python Programming for (36).mp4",
+      "/videos/Python 3 Programming Your Guide to Basic Python Programming for (37).mp4",
+      "/videos/Python 3 Programming Your Guide to Basic Python Programming for (38).mp4",
+      "/videos/Python 3 Programming Your Guide to Basic Python Programming for (39).mp4"
+    ];
+  }
+  if (productId === 14) {
+    return [
+      "/videos/Python 3 Programming Your Guide to Basic Python Programming for (40).mp4",
+      "/videos/Python 3 Programming Your Guide to Basic Python Programming for (41).mp4",
+      "/videos/Python 3 Programming Your Guide to Basic Python Programming for (42).mp4",
+      "/videos/Python 3 Programming Your Guide to Basic Python Programming for (43).mp4"
+    ];
+  }
+  if (productId === 15) {
+    return [
+      "/videos/Python 3 Programming Your Guide to Basic Python Programming for (44).mp4",
+      "/videos/Python 3 Programming Your Guide to Basic Python Programming for (45).mp4",
+      "/videos/Python 3 Programming Your Guide to Basic Python Programming for (1).mp4",
+      "/videos/Python 3 Programming Your Guide to Basic Python Programming for (2).mp4"
+    ];
+  }
+  
+  // Course 16-17: 5 videos each (most expensive courses)
+  if (productId === 16) {
+    return [
+      "/videos/Python 3 Programming Your Guide to Basic Python Programming for (3).mp4",
+      "/videos/Python 3 Programming Your Guide to Basic Python Programming for (4).mp4",
+      "/videos/Python 3 Programming Your Guide to Basic Python Programming for (5).mp4",
+      "/videos/Python 3 Programming Your Guide to Basic Python Programming for (6).mp4",
+      "/videos/Python 3 Programming Your Guide to Basic Python Programming for (7).mp4"
+    ];
+  }
+  if (productId === 17) {
+    return [
+      "/videos/Python 3 Programming Your Guide to Basic Python Programming for (8).mp4",
+      "/videos/Python 3 Programming Your Guide to Basic Python Programming for (9).mp4",
+      "/videos/Python 3 Programming Your Guide to Basic Python Programming for (10).mp4",
+      "/videos/Python 3 Programming Your Guide to Basic Python Programming for (11).mp4",
+      "/videos/Python 3 Programming Your Guide to Basic Python Programming for (12).mp4"
+    ];
+  }
+  
   return undefined;
 };
 
@@ -131,7 +203,7 @@ export const products: Product[] = [
   {
     id: 1,
     name: "Introduction to Basic Python Programming",
-    price: 6.99,
+    price: 1.00,
     image: getProductImage(1),
     images: getProductImages(1),
     video: getProductVideo(1),
@@ -158,7 +230,7 @@ export const products: Product[] = [
   {
     id: 2,
     name: "Python Lists, Strings & Data Structures",
-    price: 9.99,
+    price: 1.95,
     image: getProductImage(2),
     images: getProductImages(2),
     video: getProductVideo(2),
@@ -185,7 +257,7 @@ export const products: Product[] = [
   {
     id: 3,
     name: "Python Methods and Functions",
-    price: 19.99,
+    price: 6.99,
     image: getProductImage(3),
     images: getProductImages(3),
     video: getProductVideo(3),
@@ -212,7 +284,7 @@ export const products: Product[] = [
   {
     id: 4,
     name: "Python Object-Oriented Programming",
-    price: 29.99,
+    price: 9.99,
     image: getProductImage(4),
     images: getProductImages(4),
     video: getProductVideo(4),
@@ -239,7 +311,7 @@ export const products: Product[] = [
   {
     id: 5,
     name: "Advanced Python Concepts & Practices",
-    price: 39.99,
+    price: 19.99,
     image: getProductImage(5),
     images: getProductImages(5),
     video: getProductVideo(5),
@@ -269,7 +341,7 @@ export const products: Product[] = [
   {
     id: 6,
     name: "Python Libraries & Package Management",
-    price: 49.99,
+    price: 29.99,
     image: getProductImage(6),
     images: getProductImages(6),
     video: getProductVideo(6),
@@ -299,7 +371,7 @@ export const products: Product[] = [
   {
     id: 7,
     name: "Python Web Development with Flask",
-    price: 59.99,
+    price: 39.99,
     image: getProductImage(7),
     images: getProductImages(7),
     video: getProductVideo(7),
@@ -329,7 +401,7 @@ export const products: Product[] = [
   {
     id: 8,
     name: "Python Algorithms & Data Structures",
-    price: 69.99,
+    price: 49.99,
     image: getProductImage(8),
     images: getProductImages(8),
     video: getProductVideo(8),
@@ -359,7 +431,7 @@ export const products: Product[] = [
   {
     id: 9,
     name: "Python Data Analysis with Pandas",
-    price: 79.99,
+    price: 59.99,
     image: getProductImage(9),
     images: getProductImages(9),
     video: getProductVideo(9),
@@ -389,7 +461,7 @@ export const products: Product[] = [
   {
     id: 10,
     name: "Python REST API Development",
-    price: 89.99,
+    price: 69.99,
     image: getProductImage(10),
     images: getProductImages(10),
     video: getProductVideo(10),
@@ -419,7 +491,7 @@ export const products: Product[] = [
   {
     id: 11,
     name: "Advanced Python Programming & Best Practices",
-    price: 99.99,
+    price: 79.99,
     image: getProductImage(11),
     images: getProductImages(11),
     video: getProductVideo(11),
@@ -443,6 +515,188 @@ export const products: Product[] = [
       "Practices": "Testing, debugging, optimization",
       "Access": "18 months",
       "Bonus": "Professional development toolkit"
+    },
+    inStock: true
+  },
+  {
+    id: 12,
+    name: "Python Machine Learning Fundamentals",
+    price: 89.99,
+    image: getProductImage(12),
+    images: getProductImages(12),
+    video: getProductVideo(12),
+    videos: getProductVideos(12),
+    description: "Introduction to machine learning with Python, scikit-learn, and foundational ML algorithms.",
+    detailedDescription: "Begin your journey into machine learning with Python. This comprehensive course includes 4 detailed video modules covering ML fundamentals, scikit-learn library, and implementing various machine learning algorithms for predictive analytics.",
+    category: "Machine Learning",
+    features: [
+      "4 detailed video modules",
+      "9 hours of ML training",
+      "Scikit-learn mastery",
+      "Supervised learning algorithms",
+      "Model evaluation techniques",
+      "Real-world ML projects"
+    ],
+    specifications: {
+      "Duration": "9 hours",
+      "Videos": "4 detailed modules",
+      "Level": "Advanced",
+      "Libraries": "scikit-learn, numpy, pandas",
+      "Algorithms": "Linear regression, classification, clustering",
+      "Access": "18 months",
+      "Bonus": "ML project templates"
+    },
+    inStock: true
+  },
+  {
+    id: 13,
+    name: "Python Deep Learning with TensorFlow",
+    price: 99.99,
+    image: getProductImage(13),
+    images: getProductImages(13),
+    video: getProductVideo(13),
+    videos: getProductVideos(13),
+    description: "Master deep learning and neural networks using TensorFlow and Keras frameworks.",
+    detailedDescription: "Dive deep into neural networks and deep learning with TensorFlow. This premium course includes 4 comprehensive video modules covering neural network architecture, TensorFlow/Keras implementation, and building sophisticated deep learning models.",
+    category: "Deep Learning",
+    features: [
+      "4 comprehensive video modules",
+      "10 hours of deep learning",
+      "TensorFlow & Keras mastery",
+      "Neural network design",
+      "CNN and RNN implementation",
+      "Image & text classification"
+    ],
+    specifications: {
+      "Duration": "10 hours",
+      "Videos": "4 comprehensive modules",
+      "Level": "Expert",
+      "Frameworks": "TensorFlow, Keras",
+      "Topics": "Neural networks, CNN, RNN",
+      "Access": "20 months",
+      "Bonus": "Pre-trained model collection"
+    },
+    inStock: true
+  },
+  {
+    id: 14,
+    name: "Python Automation & Scripting Mastery",
+    price: 109.00,
+    image: getProductImage(14),
+    images: getProductImages(14),
+    video: getProductVideo(14),
+    videos: getProductVideos(14),
+    description: "Automate tasks and build powerful scripts for file handling, web scraping, and system administration.",
+    detailedDescription: "Master Python automation and scripting techniques. This advanced course includes 4 detailed video modules covering task automation, web scraping, file manipulation, and system administration scripts to boost productivity.",
+    category: "Automation",
+    features: [
+      "4 detailed video modules",
+      "11 hours of automation training",
+      "Web scraping with BeautifulSoup",
+      "File & directory automation",
+      "System administration scripts",
+      "Scheduled task execution"
+    ],
+    specifications: {
+      "Duration": "11 hours",
+      "Videos": "4 detailed modules",
+      "Level": "Advanced",
+      "Tools": "Selenium, BeautifulSoup, schedule",
+      "Projects": "10+ automation scripts",
+      "Access": "20 months",
+      "Bonus": "Automation script library"
+    },
+    inStock: true
+  },
+  {
+    id: 15,
+    name: "Python Cybersecurity & Ethical Hacking",
+    price: 119.00,
+    image: getProductImage(15),
+    images: getProductImages(15),
+    video: getProductVideo(15),
+    videos: getProductVideos(15),
+    description: "Learn cybersecurity concepts, penetration testing, and ethical hacking using Python tools.",
+    detailedDescription: "Enter the world of cybersecurity with Python. This comprehensive course includes 4 detailed video modules covering security fundamentals, penetration testing tools, vulnerability assessment, and ethical hacking techniques using Python.",
+    category: "Cybersecurity",
+    features: [
+      "4 detailed video modules",
+      "12 hours of security training",
+      "Penetration testing tools",
+      "Network security analysis",
+      "Vulnerability scanning",
+      "Ethical hacking techniques"
+    ],
+    specifications: {
+      "Duration": "12 hours",
+      "Videos": "4 detailed modules",
+      "Level": "Expert",
+      "Tools": "Scapy, Nmap, custom Python tools",
+      "Topics": "Pentesting, network security, cryptography",
+      "Access": "24 months",
+      "Bonus": "Security toolkit & cheatsheets"
+    },
+    inStock: true
+  },
+  {
+    id: 16,
+    name: "Python Full-Stack Development Complete",
+    price: 129.00,
+    image: getProductImage(16),
+    images: getProductImages(16),
+    video: getProductVideo(16),
+    videos: getProductVideos(16),
+    description: "Complete full-stack development with Django, React integration, and deployment strategies.",
+    detailedDescription: "Become a full-stack Python developer. This ultimate course includes 5 comprehensive video modules covering Django framework, REST API development, React integration, database design, and production deployment for complete web applications.",
+    category: "Full Stack",
+    features: [
+      "5 comprehensive video modules",
+      "14 hours of full-stack training",
+      "Django framework mastery",
+      "REST API development",
+      "React integration",
+      "Production deployment",
+      "Complete project portfolio"
+    ],
+    specifications: {
+      "Duration": "14 hours",
+      "Videos": "5 comprehensive modules",
+      "Level": "Expert",
+      "Stack": "Django, DRF, PostgreSQL, React",
+      "Projects": "3 full-stack applications",
+      "Access": "24 months",
+      "Bonus": "Deployment templates & CI/CD setup"
+    },
+    inStock: true
+  },
+  {
+    id: 17,
+    name: "Python Data Science Professional Track",
+    price: 139.00,
+    image: getProductImage(17),
+    images: getProductImages(17),
+    video: getProductVideo(17),
+    videos: getProductVideos(17),
+    description: "Professional data science with Python covering statistics, ML, visualization, and big data.",
+    detailedDescription: "Master professional data science with Python. This premium course includes 5 detailed video modules covering advanced statistics, machine learning, data visualization, big data processing, and real-world data science projects.",
+    category: "Data Science",
+    features: [
+      "5 detailed video modules",
+      "16 hours of data science training",
+      "Advanced statistical analysis",
+      "Machine learning pipelines",
+      "Big data with PySpark",
+      "Professional visualization",
+      "Industry-standard projects"
+    ],
+    specifications: {
+      "Duration": "16 hours",
+      "Videos": "5 detailed modules",
+      "Level": "Expert",
+      "Tools": "Pandas, NumPy, scikit-learn, PySpark",
+      "Topics": "Statistics, ML, big data, visualization",
+      "Access": "Lifetime",
+      "Bonus": "Dataset library & project templates"
     },
     inStock: true
   }
